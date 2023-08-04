@@ -1,0 +1,24 @@
+<!-- Header -->
+
+<app-header (toggle)="sidebarToggle()"> </app-header>
+
+
+<!-- Sidebar -->
+
+
+
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" [opened]="sidebar"><app-sidebar></app-sidebar>  </mat-drawer> 
+    <!-- if the opened is false the sidebar is hide -->
+    <mat-drawer-content><router-outlet></router-outlet></mat-drawer-content>
+  </mat-drawer-container>
+  
+
+<!-- Main Content -->
+
+
+
+<mat-divider></mat-divider>
+<!-- Footer -->
+
+<app-footer></app-footer>
